@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Nunito:wght@700&display=swap" rel="stylesheet">
+    <title>Sờ pót ti five - Đăng Ký</title>
+    <link rel="stylesheet" href="style.css"/>
+    
+    <link rel="icon" href="https://cdn.glitch.global/735aef68-fcb0-41f4-9406-1647cf358fb8/spotify.png?v=1668574809749" type="image/x-icon/">
+  </head>
+  <body>
+        <div class="top">
+            <a id="linklogo" href="https://duypham128.github.io/sptf1/">
+                <img id="logo" src="https://www.pngkey.com/png/full/865-8654591_spotify-01-listen-on-spotify-white-logo.png"/>
+            </a>
+        </div>
+        <h3 class="h3">Đăng Ký Để Nghe Nhạc Mất Phí</h3>
+        <div class="mid">
+            
+            <form>
+                <h4>Email Của Bạn Là Gì?</h4>
+                <div class="form-g" id="email">
+                    <input type="text" name="email" required>
+                    <label id="lb-email">Nhập Email</label>
+                </div>
+                <h4>Mật Khẩu Của Bạn Là Gì?</h4>
+                <div class="form-g" id="password">
+                    <input type="password" name="password" required>
+                    <label id="lb-password">Mật Khẩu</label>
+                </div>
+                <h4>Xác Nhận Lại Mật Khẩu Của Bạn.</h4>
+                <div class="form-g" id="xn-password">
+                    <input type="password" name="xnPassword" required>
+                    <label id="lb-xn-pass">Nhập Lại Mật Khẩu</label>
+                </div>
+                <h4>Tên Tài Khoản Của Bạn Là Gì?</h4>
+                <div class="form-g" id="ten">
+                    <input type="text" name="ten" required>
+                    <label id="lb-ten">Tên Tài Khoản</label>
+                </div>
+                        <h4>Giới Tính Của Bạn</h4>
+                       
+                        <div id="gender" >
+                            <input type="radio" name="gt" id="gt" value="nam" >
+                            <label id="lb-nam">Nam</label>
+                            <input type="radio" name="gt" id="gt" value="nu">
+                            <label id="lb-nu">Nữ</label>
+                            <input id="gt" type="radio" name="gt" value="khac">
+                            <label id="lb-khac">Khác</label>
+                        </div>
+                    
+                <h4>Ngày Sinh</h4>
+                <div id="date" class="form-g">
+                    <div class="days">
+                        <div>Ngày</div>
+                        <input type="number" oninput="maxLengthCheck(this)" maxlength="2" id="day">
+                    </div>
+                    <div class="months">
+                        <div>Tháng</div>
+                        <select>
+                            <option>Tháng</option>
+                            <option>Tháng 1</option>
+                            <option>Tháng 2</option>
+                            <option>Tháng 3</option>
+                            <option>Tháng 4</option>
+                            <option>Tháng 5</option>
+                            <option>Tháng 6</option>
+                            <option>Tháng 7</option>
+                            <option>Tháng 8</option>
+                            <option>Tháng 9</option>
+                            <option>Tháng 10</option>
+                            <option>Tháng 11</option>
+                            <option>Tháng 12</option>
+                        </select>                    
+                    </div>
+                    <div class="years">
+                        <div>Năm</div>
+                        <input type="number" oninput="maxLengthCheck(this)" maxlength="4" id="year">
+                    </div>
+                </div>
+                <div id="dieukhoan" class="form-g">
+                    <h4>Bạn Có Chấp Nhận<a href="https://duypham128.github.io/sptf10/"> Điều Khoản Của Chúng Tôi</a></h4>
+                    <span id="check">
+                    <input type="checkbox" id="dkhoan">
+                    <label id="lb-dkhoan">Tôi đồng ý</label>
+                    </span>
+                </div>
+                
+            </form>
+            
+        </div>
+        <footer>
+            <div class="footer">
+                <div class="dkbtn">
+                    <a href="#">
+                    <input type="button" id="dkbt" value="Đăng Ký">
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+  </body>
+  </html>
